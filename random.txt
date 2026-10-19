@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=M, initial-scale=1.0">
+    <title>My Resume</title>
+</head>
+<body>
+    <h1>Akowanu Emmanuel</h1>
+    <img src="my_image.jpg" height="200" width="200"/>
+    <h2>Summary</h2>
+    <p>Civil Engineering student with strong analytical and technical skills, and a solid foundation in engineering principles, problem solving, and project-based learning. Experienced in applying engineering theory to coursework and practical assignments, with growing interests in programming, data-driven analysis, and emerging technologies. Highly motivated, detail-oriented, and committed to continuous learning and professional development. </p>
+    <hr>
+    <h2>Education</h2>
+        <ul>
+            <li>Primary Education at Our Lady of Apostles Private School, Yaba, Lagos</li>
+            <li>Secondary Education at ST. Finbarr's College, Akoka</li>
+            <li>Diploma at Bells University of Technology, Ota </li>
+            <li>Bachelor of Engineering, Civil Engineering - Ajayi Crowther University, Oyo. </li>
+            
+        </ul>
+    <hr>
+    <h2>Work Experience</h2>
+    <ul>
+        <li>Engineering Intern at Ajayi Crowther University Works Department</li>
+        <p>June 2024 - August 2024</p>
+            <ul>
+                <li>Served as a lab assistance</li>
+                <li>Assisted site engineers in their daily site schedules</li>
+            </ul>
+        <br>
+        <li>Junior Site Engineer at Oceanic Construction & Engineering Ltd.</li>
+        <p>March 2025 - Present</p>
+            <Ul>
+                <li>Daily inspection of site work</li>
+                <li>Daily assigning of work and supervision of site labour</li>
+                <li>Preparing work schedule and BOQ for project</li>
+                <li>Use of Civil Engineering softwares like:
+                    <ol>
+                        <li>Civil 3D</li>
+                        <li>Orion</li>
+                        <li>AUTOCAD</li>
+                        <li>ABAQUS</li>
+                        <li>STAAD PRO</li>
+                    </ol>
+                </li>    
+            </Ul>
+    </ul>
+    <hr>
+    <h2>Skills</h2>
+        <ul>
+            <li>Graphics designer</li>
+            <li>Python programming lauguage tutor</li>
+            <li>DBMS Expert</li>
+            <li>FEA and Material Modelling</li>
+            <li>Microsoft Office Suite</li>
+            <li>Violinist and Saxophonist</li>
+        </ul>
+    <hr>
+    <h2>Awards and Certifications</h2>
+    <ul>
+        <li>Microsoft Word Certification</li>
+        <li>Employee of the Month - Oceanic Construction & Engineering Ltd</li>
+        <li>Intermediate Python Programming Certification</li>
+    </ul>
+    <hr>
+    <h2>Other</h2>
+    <ul>
+        <li><a href="./Public/Hobbies.html">My hobbies</a></li>
+        <li><a href="./Public/Contact.html">Contact</a></li>
+    </ul>
+    <footer>
+        <small>
+        BREAD (TM) All rights reserved
+        </small>
+    </footer>
+</body>
+</html>
+
+
+<h1>My Hobbies</h1>
+<hr>
+<ol>
+<li><p>I play football in these positions: </p></li>
+<ul>
+  <li>Leftback</li>
+  <li>Rightback</li>
+  <li>Defensive midfielder</li>
+</ul>
+<li><p>I love to eat and enjoy good food</p></li>
+<li><p>I play football games like: </p></li>
+<ul>
+  <li>eFootball 2026</li>
+  <li>EAFC</li>
+  <li>UFL Mobile</li>
+</ul>
+<li><p>I listen to various genre of music</p></li>
+</ol>
+
+
+<h1>Contact Me</h1>
+<p>Tel: +2349032503708</p>
+<p>Email: akowanuemmanuel1@gmail.com</p>
+<p>Address:</p>
+<p>
+  123 Bobby Street<br />
+  Lagos<br />
+  Nigeria <br />
+</p>
