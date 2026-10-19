@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal website of Akowanu, a first-class Civil Engineering graduate focused on structural engineering and finite element analysis.">
+  <title>Akowanu | Civil Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Public+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body id="top">
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__brand" href="#top">Akowanu</a>
+      <nav aria-label="Main">
+        <ul class="nav">
+          <li><a class="nav__link" href="#resume">Resume</a></li>
+          <li><a class="nav__link" href="#projects">Projects</a></li>
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__inner">
+        <div class="hero__text">
+          <h1 class="hero__title" id="hero-title">Akowanu</h1>
+          <p class="hero__role">Civil engineer working in structural analysis and simulation.</p>
+          <p class="hero__lead">
+            I graduated first class in Civil Engineering from Ajayi Crowther University
+            and was named Best Graduating Student for 2025/2026. I model how reinforced
+            concrete behaves under load, and I am now learning to build for the web.
+          </p>
+          <p class="hero__actions">
+            <a class="button button--primary" href="#resume">Read my resume</a>
+            <a class="button button--outline" href="#contact">Get in touch</a>
+          </p>
+        </div>
+
+        <figure class="hero__figure">
+          <svg class="beam" viewBox="0 0 480 250" role="img" aria-labelledby="beam-title beam-desc">
+            <title id="beam-title">Simply supported beam under a point load</title>
+            <desc id="beam-desc">A beam resting on two supports bends downward under a load at its centre. The deflected beam is coloured like a finite element stress plot, from blue at the supports to red at midspan.</desc>
+            <defs>
+              <linearGradient id="stress" gradientUnits="userSpaceOnUse" x1="40" y1="0" x2="440" y2="0">
+                <stop offset="0" stop-color="#1f5fbf"/>
+                <stop offset="0.25" stop-color="#1fa58a"/>
+                <stop offset="0.4" stop-color="#e8b923"/>
+                <stop offset="0.5" stop-color="#d9482b"/>
+                <stop offset="0.6" stop-color="#e8b923"/>
+                <stop offset="0.75" stop-color="#1fa58a"/>
+                <stop offset="1" stop-color="#1f5fbf"/>
+              </linearGradient>
+            </defs>
+            <!-- original position of the beam -->
+            <line class="beam__ghost" x1="40" y1="110" x2="440" y2="110"/>
+            <!-- load -->
+            <line class="beam__stroke" x1="240" y1="24" x2="240" y2="96"/>
+            <polygon class="beam__fill" points="240,108 232,92 248,92"/>
+            <text class="beam__label" x="254" y="52">P</text>
+            <!-- deflected beam -->
+            <path class="beam__member" d="M40 110 Q240 170 440 110" stroke="url(#stress)"/>
+            <!-- supports -->
+            <polygon class="beam__support" points="40,118 26,146 54,146"/>
+            <polygon class="beam__support" points="440,118 426,146 454,146"/>
+            <line class="beam__stroke" x1="18" y1="150" x2="62" y2="150"/>
+            <line class="beam__stroke" x1="418" y1="150" x2="462" y2="150"/>
+            <!-- span dimension -->
+            <line class="beam__dim" x1="40" y1="200" x2="440" y2="200"/>
+            <line class="beam__dim" x1="40" y1="192" x2="40" y2="208"/>
+            <line class="beam__dim" x1="440" y1="192" x2="440" y2="208"/>
+            <text class="beam__label beam__label--center" x="240" y="228">L</text>
+          </svg>
+          <figcaption class="hero__caption">Reinforced concrete beams under load are what my thesis models in ABAQUS.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Resume -->
+    <section class="section" id="resume" aria-labelledby="resume-title">
+      <div class="section__inner">
+        <div class="section__head">
+          <h2 class="section__title" id="resume-title">Resume</h2>
+          <p class="section__note">
+            The standalone version is my
+            <a href="../CAPSTONE PROJECT 1/index.html">Capstone Project 1 online resume.</a>
+          </p>
+        </div>
+
+        <div class="section__body">
+
+          <h3 class="group-title">Summary</h3>
+          <p>
+            First-class Civil Engineering graduate with a focus on structural engineering,
+            finite element analysis, and material modelling and simulation. I have worked
+            with ABAQUS, STAAD.Pro, AutoCAD and Revit, and I am adding full-stack web
+            development to that toolkit.
+          </p>
+
+          <h3 class="group-title">Education</h3>
+          <article class="entry">
+            <h4 class="entry__title">Bachelor's Degree in Civil Engineering, First Class</h4>
+            <p class="entry__meta">Ajayi Crowther University, Oyo, Nigeria &middot; Graduated <time datetime="2026">2026</time></p>
+            <p>Thesis: <em>Analysis of Reinforced Concrete Beams of Varying Compressive Strengths Using ABAQUS Software</em>.</p>
+          </article>
+
+          <h3 class="group-title">Work experience</h3>
+          <article class="entry">
+            <h4 class="entry__title">Engineering Intern</h4>
+            <p class="entry__meta">Oceanic Construction and Engineering Limited &middot; <time datetime="2025-03">March 2025</time> to <time datetime="2025-09">September 2025</time></p>
+            <!-- Replace with your real responsibilities -->
+            <p>[Add what you worked on here]</p>
+          </article>
+          <article class="entry">
+            <h4 class="entry__title">Engineering Intern</h4>
+            <p class="entry__meta">Ajayi Crowther University Works Department &middot; <time datetime="2024-08">August 2024</time> to <time datetime="2024-09">September 2024</time></p>
+            <!-- Replace with your real responsibilities -->
+            <p>[Add what you worked on here]</p>
+          </article>
+
+          <h3 class="group-title">Skills</h3>
+          <div class="skills">
+            <div class="skills__group">
+              <h4 class="skills__title">Engineering software</h4>
+              <ul class="skills__list">
+                <li>ABAQUS</li>
+                <li>STAAD.Pro</li>
+                <li>Autodesk ROBOT Structural Analysis</li>
+                <li>AutoCAD</li>
+                <li>Civil 3D</li>
+                <li>Revit</li>
+              </ul>
+            </div>
+            <div class="skills__group">
+              <h4 class="skills__title">Programming and web</h4>
+              <ul class="skills__list">
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            </div>
+            <div class="skills__group">
+              <h4 class="skills__title">Areas of expertise</h4>
+              <ul class="skills__list">
+                <li>Structural engineering</li>
+                <li>Finite element analysis</li>
+                <li>Material modelling and simulation</li>
+              </ul>
+            </div>
+          </div>
+
+          <h3 class="group-title">Awards and certifications</h3>
+          <ul class="plain-list">
+            <li>Best Graduating Student (two awards), 2025/2026 academic year</li>
+            <li>NIIT certification</li>
+            <li>Anthropic certification</li>
+            <li>Involved with AIESEC in Ibadan</li>
+          </ul>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="section__inner">
+        <div class="section__head">
+          <h2 class="section__title" id="projects-title">Projects</h2>
+          <p class="section__note">Academic research and the websites I have built so far.</p>
+        </div>
+
+        <div class="section__body">
+          <ul class="projects">
+            <li class="project">
+              <h3 class="project__title">Reinforced concrete beam analysis</h3>
+              <p class="project__text">Final-year thesis comparing how concrete beams of different compressive strengths behave, modelled in ABAQUS.</p>
+              <p class="project__tags">Finite element analysis &middot; ABAQUS</p>
+            </li>
+            <li class="project">
+              <h3 class="project__title">Online resume</h3>
+              <p class="project__text">A multi-page resume written in plain HTML, with hobbies and contact pages.</p>
+              <p class="project__tags">HTML &middot; <a href="https://github.com/Akowanu1/FULL-STACK-WEB-DEVELOPMENT-PORTFOLIO/tree/Online-Resume">View on GitHub</a></p>
+            </li>
+            <li class="project">
+              <h3 class="project__title">DaloKiller</h3>
+              <p class="project__text">A landing page for eFootball players to manage squads, with a carousel, weekly updates and a responsive navigation bar.</p>
+              <p class="project__tags">HTML &middot; Bootstrap</p>
+            </li>
+            <li class="project">
+              <h3 class="project__title">TinDog</h3>
+              <p class="project__text">A mobile-first landing page for a dog-matching app, with feature highlights, a testimonial and pricing plans.</p>
+              <p class="project__tags">HTML &middot; CSS &middot; Bootstrap</p>
+            </li>
+            <li class="project">
+              <h3 class="project__title">Mondrian painting</h3>
+              <p class="project__text">A recreation of a Mondrian composition, built with CSS Grid and exact track sizes.</p>
+              <p class="project__tags">HTML &middot; CSS Grid</p>
+            </li>
+            <li class="project">
+              <h3 class="project__title">Flag of Laos</h3>
+              <p class="project__text">The flag drawn with only CSS selectors and positioning, with no extra classes or elements.</p>
+              <p class="project__tags">HTML &middot; CSS positioning</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="section__inner">
+        <div class="section__head">
+          <h2 class="section__title" id="about-title">About me</h2>
+        </div>
+
+        <div class="section__body about">
+          <figure class="about__photo">
+            <!-- Save your photo as images/profile.jpg -->
+            <img src="/images/IMG_20260511_173022_631@-757809969.jpg" alt="Portrait of Akowanu" width="320" height="400" loading="lazy">
+          </figure>
+          <div class="about__text">
+            <p>
+              I am a civil engineer based on the Lagos mainland. I like understanding why a
+              structure holds or fails, which is why I gravitate to simulation and material modelling.
+            </p>
+            <p>
+              Coding started as a way to automate engineering work and has become a second
+              craft. I am working through a full-stack web development bootcamp, and this site
+              is one of its capstone projects.
+            </p>
+            <h3 class="group-title">Outside work</h3>
+            <!-- Edit these to match your real interests -->
+            <ul class="plain-list">
+              <li>Football</li>
+              <li>Building websites</li>
+              <li>Volunteering with AIESEC in Ibadan</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="section__inner">
+        <div class="section__head">
+          <h2 class="section__title" id="contact-title">Contact me</h2>
+          <p class="section__note">Email is the quickest way to reach me.</p>
+        </div>
+
+        <div class="section__body">
+          <address class="contact">
+            <p class="contact__row">
+              <span class="contact__label">Email</span>
+              <a href="mailto:akowanuemmanuel1@gmail.com">akowanuemmanuel1@gmail.com</a>
+            </p>
+            <p class="contact__row">
+              <span class="contact__label">Phone</span>
+              <a href="tel:+2349032503708">+234 903 250 3708</a>
+            </p>
+            <p class="contact__row">
+              <span class="contact__label">Location</span>
+              Lagos, Nigeria
+            </p>
+            <p class="contact__row">
+              <span class="contact__label">GitHub</span>
+              <a href="https://github.com/Akowanu1">github.com/Akowanu1</a>
+            </p>
+          </address>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>&copy; 2026 Akowanu. All rights reserved.</p>
+      <p><a href="#top">Back to top</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
